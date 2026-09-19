@@ -6,8 +6,11 @@ const healthRoutes = require("./routes/healthRoutes");
 const problemRoutes = require("./routes/problemRoutes.js");
 const problemDetectionRoutes = require("./routes/problemDetectionRoutes");
 const cors = require("cors");
-
-app.use(cors());
+//why not cors()
+app.use(cors({
+        origin: "http://localhost:5173",
+        credentials: true,
+    }));
 app.use(express.json());
 
 const authRoutes = require("./routes/authRoutes");
