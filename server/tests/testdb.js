@@ -1,6 +1,6 @@
-const connectDatabase = require("./src/config/database");
-const User = require("./src/models/User");
-const Problem = require("./src/models/Problem");
+const connectDatabase = require("../src/config/database");
+const User = require("../src/models/User");
+const Problem = require("../src/models/Problem");
 require("dotenv").config();
 const testDatabase = async () => {
     try {
