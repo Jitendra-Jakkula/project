@@ -13,12 +13,4 @@ router.post("/login", login);
 
 router.get("/me", authMiddleware, getMe);
 
-router.get("/protected", authMiddleware, (req, res) => {
-    res.json({
-        success: true,
-        message: "You are authenticated",
-        userId: req.userId,
-    });
-});
-
 module.exports = router;
