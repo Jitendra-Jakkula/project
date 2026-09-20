@@ -90,8 +90,8 @@ const NotesEditor = ({ content, onChange }) => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="notes-editor">
+      <div className="notes-toolbar">
         <button
           type="button"
           onClick={() =>

@@ -201,9 +201,12 @@ const ProblemDetails = () => {
           {saving ? "Saving..." : "Save Changes"}
         </button>
 
-        <button onClick={handleDelete}>
-          Delete Problem
-        </button>
+        <button
+  className="btn-danger"
+  onClick={handleDelete}
+>
+  Delete Problem
+</button>
       </section>
     </div>
   );

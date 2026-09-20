@@ -1,17 +1,41 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-    return (
-        <aside>
-            <h3>Menu</h3>
+  return (
+    <aside className="sidebar">
+      <h3 className="sidebar-title">Menu</h3>
 
-            <nav>
-                <Link to="/">Dashboard</Link>
-                <Link to="/problems">Problems</Link>
-                <Link to="/add">Add Problem</Link>
-            </nav>
-        </aside>
-    );
+      <nav className="sidebar-nav">
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Dashboard
+        </NavLink>
+
+        <NavLink
+          to="/problems"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Problems
+        </NavLink>
+
+        <NavLink
+          to="/add"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          + Add Problem
+        </NavLink>
+      </nav>
+    </aside>
+  );
 };
 
 export default Sidebar;
