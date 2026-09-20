@@ -1,6 +1,5 @@
-const app = require("./src/app");
-// const env = require("./src/config/env");
 require("dotenv").config();
+const app = require("./src/app");
 const connectDatabase = require("./src/config/database");
 
 const startServer = async () => {
