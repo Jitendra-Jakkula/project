@@ -7,7 +7,7 @@ const AddProblem = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [problem, setProblem] = useState(null);
-  const [topic, setTopic] = useState("all");
+  
   const navigate = useNavigate();
   
   const handleDetect = async () => {

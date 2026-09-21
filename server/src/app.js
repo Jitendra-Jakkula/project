@@ -5,6 +5,7 @@ const app = express();
 const healthRoutes = require("./routes/healthRoutes");
 const problemRoutes = require("./routes/problemRoutes.js");
 const problemDetectionRoutes = require("./routes/problemDetectionRoutes");
+const uploadRoutes = require("./routes/uploadRoutes.js");
 const cors = require("cors");
 //why not cors()
 app.use(cors({
@@ -18,5 +19,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/problems",problemRoutes);
 app.use("/api", healthRoutes);
 app.use("/api/problems/detect",problemDetectionRoutes);
+app.use("/api/uploads", uploadRoutes);
 app.use(errorHandler);
 module.exports = app;

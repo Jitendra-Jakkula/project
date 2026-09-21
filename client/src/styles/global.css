@@ -711,3 +711,99 @@ textarea {
   justify-content: flex-end;
   gap: var(--space-3);
 }
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+
+.notes-editor blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.notes-editor code {
+  background: #f1f1f1;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.notes-editor pre {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.notes-editor pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.notes-editor a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.notes-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.notes-toolbar button {
+  padding: 5px 9px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notes-toolbar button.active {
+  background: #e5e7eb;
+  font-weight: bold;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+  margin: 0 4px;
+}
+
+.notes-editor .ProseMirror img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 6px;
+}
+
+.notes-editor .ProseMirror img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 6px;
+}
+
+.notes-editor .ProseMirror img[src=""] {
+  display: none;
+}
+
+.notes-editor .ProseMirror img.ProseMirror-selectednode {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
